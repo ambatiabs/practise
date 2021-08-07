@@ -56,9 +56,10 @@ public void Orderprocessing() throws InterruptedException {
 	loginpage.SearchFunctionality();
 	
 	String actualVAlue = driver.findElement(By.xpath("//strong[contains(text(),'\"qwer\"')]")).getText();
-	
+	System.out.println("git commit");
 	Assert.assertEquals(actualVAlue,"\"qwer\"");
 	Assert.fail();
+	
 }
 }
 
